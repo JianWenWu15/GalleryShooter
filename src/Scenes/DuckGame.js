@@ -1,6 +1,6 @@
-class ArrayBoom extends Phaser.Scene {
+class DuckGame extends Phaser.Scene {
     constructor() {
-        super("ArrayBoom");
+        super("DuckGame");
 
         // Initialize a class variable "my" which is an object.
         // The object has two properties, both of which are objects
@@ -117,7 +117,7 @@ class ArrayBoom extends Phaser.Scene {
         });
 
         // update HTML description
-        document.getElementById('description').innerHTML = '<h2>Array Boom.js</h2><br>A: left // D: right // Space: fire/emit // S: Next Scene'
+        document.getElementById('description').innerHTML = '<h2>Ducky Time.js</h2><br>W: Up // s: Down // Space: fire/emit bullet<br>';
 
         // Put score on screen
         my.text.score = this.add.bitmapText(550, 0, "rocketSquare", "Score " + this.myScore);
