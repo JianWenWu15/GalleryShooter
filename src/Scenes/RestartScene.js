@@ -10,7 +10,7 @@ class RestartScene extends Phaser.Scene {
         // Wait for the player to press Space
         this.input.keyboard.on('keydown-SPACE', () => {
             // Switch back to the main scene
-            this.scene.start('ArrayBoom');
+            this.scene.start('DuckGame');
         });
     }
 }
